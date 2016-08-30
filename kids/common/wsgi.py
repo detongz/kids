@@ -1,4 +1,8 @@
-#!/usr/bin/env python
+#
+# Copyright 2010 United States Government as represented by the
+# Administrator of the National Aeronautics and Space Administration.
+# Copyright 2013 IBM Corp.
+# All Rights Reserved.
 #
 #    Licensed under the Apache License, Version 2.0 (the "License"); you may
 #    not use this file except in compliance with the License. You may obtain
@@ -12,21 +16,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-"""Kids API Server.
+"""Utility methods for working with WSGI servers."""
 
-An OpenStack Rest API to Kids, estimating other OS modules.
-"""
-import eventlet
-eventlet.monkey_patch(os=False)
-
-import six
-
-from oslo_config import cfg
-import oslo_i18n as i18n
-from oslo_log import log as logging
-from oslo_service import systemd
-from oslo_reports import guru_meditation_report as gmr
-
-
-def main():
-    pass
+api_opts=[
+    
+]
